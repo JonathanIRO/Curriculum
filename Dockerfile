@@ -4,7 +4,6 @@ RUN apt-get update && apt-get upgrade -y
 
 COPY . /var/www/html/
 
-na
 RUN chgrp -R www-data /var/www
 EXPOSE 80
 CMD ["/usr/sbin/apache2ctl","-DFOREGROUND"]
